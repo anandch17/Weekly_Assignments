@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insurance Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+
+<h1 class="text-2xl font-bold text-center mb-6">Insurance Dashboard</h1>
+
+<!-- Plans -->
+<div class="mb-6">
+    <h2 class="text-xl font-bold mb-2">Insurance Plans</h2>
+    <div id="plans" class="flex gap-4"></div>
+</div>
+
+<!-- Form -->
+<div class="bg-white p-4 rounded shadow mb-6">
+    <h2 class="font-bold mb-2">Customer Enquiry</h2>
+
+    <form id="form">
+        <input id="name" type="text" placeholder="Name" class="border p-2 w-full mb-2">
+        <input id="age" type="number" placeholder="Age" class="border p-2 w-full mb-2">
+
+        <select id="policy" class="border p-2 w-full mb-2">
+            <option value="">Select Policy</option>
+            <option>Health</option>
+            <option>Life</option>
+            <option>Vehicle</option>
+        </select>
+
+        <input id="cover" type="range" min="1" max="5" value="1" class="w-full mb-2">
+
+        <button class="bg-blue-600 text-white px-4 py-2 rounded">
+            Add Customer
+        </button>
+    </form>
+</div>
+
+<!-- Filter -->
+<div class="mb-4">
+    <select id="filter" class="border p-2">
+        <option value="">All Policies</option>
+        <option>Health</option>
+        <option>Life</option>
+        <option>Vehicle</option>
+    </select>
+
+    <input id="search" type="text" placeholder="Search name"
+           class="border p-2 ml-2">
+</div>
+
+<!-- Table -->
+<table class="w-full bg-white border">
+    <thead class="bg-gray-200">
+        <tr>
+            <th class="border p-2">Name</th>
+            <th class="border p-2">Age</th>
+            <th class="border p-2">Policy</th>
+            <th class="border p-2">Coverage</th>
+            <th class="border p-2">Premium</th>
+        </tr>
+    </thead>
+    <tbody id="table"></tbody>
+</table>
+
+<p class="mt-4">
+    Total Customers: <span id="count">0</span> |
+    Total Premium: ₹<span id="total">0</span>
+</p>
+
+<script src="../Assignment_2/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insurance Enquiry & Feedback</title>
+    <link rel="stylesheet" href="../Assignment_1/feedback.css">
+    
+</head>
+<body>
+
+<div class="box">
+    <h2>Insurance Enquiry & Feedback</h2>
+    <p>Please fill the form below</p>
+
+    <form id="form">
+        <div class="field">
+            <label>Full Name</label>
+            <input type="text" id="name">
+            <small id="errName"></small>
+        </div>
+
+        <div class="field">
+            <label>Email</label>
+            <input type="email" id="email">
+            <small id="errEmail"></small>
+        </div>
+
+        <div class="field">
+            <label>Mobile Number</label>
+            <input type="tel" id="mobile">
+            <small id="errMobile"></small>
+        </div>
+
+        <div class="field">
+            <label>Request Type</label>
+            <select id="request">
+                <option value="">Select</option>
+                <option>Policy Enquiry</option>
+                <option>Claim Related</option>
+                <option>Feedback</option>
+            </select>
+            <small id="errRequest"></small>
+        </div>
+
+        <div class="field">
+            <label>Policy Type</label>
+            <select id="policy">
+                <option value="">Select</option>
+                <option>Health Insurance</option>
+                <option>Life Insurance</option>
+                <option>Vehicle Insurance</option>
+                <option>Home Insurance</option>
+            </select>
+            <small id="errPolicy"></small>
+        </div>
+
+        <div class="field">
+            <label>Message</label>
+            <textarea id="msg"></textarea>
+            <small id="errMsg"></small>
+        </div>
+
+        <div class="field">
+            <label>Experience</label>
+            <div class="rate">
+                <input type="radio" name="rate" value="1">1
+                <input type="radio" name="rate" value="2">2
+                <input type="radio" name="rate" value="3">3
+                <input type="radio" name="rate" value="4">4
+                <input type="radio" name="rate" value="5">5
+            </div>
+            <small id="errRate"></small>
+        </div>
+
+        <button type="submit">Submit</button>
+        <p class="success" id="success"></p>
+    </form>
+</div>
+
+<script src="../Assignment_1/feedback.js"></script>
+</body>
+</html>
