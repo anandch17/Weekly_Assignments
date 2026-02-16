@@ -1,0 +1,6 @@
+@EmpDeptSql_HostAddress = http://localhost:5007
+
+GET {{EmpDeptSql_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
